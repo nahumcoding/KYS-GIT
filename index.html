@@ -7,6 +7,9 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+<!-- Css link -->
+<link rel="stylesheet" href="assets/css/style.css">
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -15,11 +18,34 @@
 </head>
 
 <body>
-	<div class="col-lg-12">
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			  <!-- Brand and toggle get grouped for better mobile display -->
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">KYS Concerts</a>
+			  </div>
+	<form class="navbar-form navbar-left" role="search">
+		<div class="form-group">
+		  <input type="text" class="form-control" placeholder="Search">
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+	</div>
+	
+	<div class="container">
 		<div class="jumbotron">
-			<h1>KYS Concerts</h1>
-			<p>Use your Spotify account to find out when your favorite artist are having their next concerts. Do not miss out on shows near you!</p>
-			<p><a class="btn btn-primary btn-lg" href="#" role="button">Spotify Login</a></p>
+			<h1 class="start">KYS Concerts</h1>
+			<p class="instructions">Use your Spotify account to find out when your favorite artist are having their next concerts. Do not miss out on shows near you!</p>
+			<div class="col-md-12 text-center">
+				<button id="singlebutton" name="singlebutton" class="btn btn-primary">Spotify Login</button>
+			</div>
 		</div>
 	</div>
 </body>
