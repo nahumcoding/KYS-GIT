@@ -1,6 +1,11 @@
+body {
+    background-image: url("../images/background.jpg");
+}
+
 .jumbotron {
     background-image: url("../images/cover.jpg");
     color: white;
+    height: 400px;
 }
 
 .start {
@@ -15,8 +20,20 @@
     background-color: #006652;
 }
 
-.navbar-default {
-    border: none;
-    color: red;
-    
+.nav-pills {
+    float: left;
+    color: white;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.info {
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 400px;
+    position: absolute;
 }
