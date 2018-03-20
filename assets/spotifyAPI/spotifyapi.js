@@ -1,28 +1,30 @@
-var accessToken = null;
+var accessToken = "BQCngKOvUpYV1XJWWMx2LQpeP2vBrmp2Qgx60mE2GHSUQpwA4Zx8sbsn_6TkWVpwVEYoyYKNaOW-bbEiwQ_2olObHRvdKDb5VexFWfFTzUqTLmN44mqf_QdV6qZjfIhDVxu3BHqaRO16oZEH0gKf_MTv_gM";
 
 
 
+
+var type = 'artists'
+
+
+function getArtists (callback){
 $.ajax({
+   url: `https://api.spotify.com/v1/me/top/${type}?limit=3`,
+   headers: {
+       'Authorization': 'Bearer ' + accessToken
+   },
+   success: function(response) {
 
-	url: 'https://accounts.spotify.com/authorize?client_id=117298f8d65647da97d993cc58cfd26d&redirect_uri=https://www.google.com&scope=user-read-private%20user-read-email&response_type=token&state=123',
+   	var artists = [];
 
-	success: function(response) {};
-})
+     for(i=0; i<response.items.length; i++){
+       artists.push(response.items[i].name);
+       }
+       callback(artists);
+   }
+});
 
-//$.ajax({
-  // url: 'https://api.spotify.com/v1/me',
-   //headers: {
-     //  'Authorization': 'Bearer ' + accessToken
-   //},
-   //success: function(response) {
-     //  ...
-  // }
-//});
+}
 
-
-//https://accounts.spotify.com/authorize?client_id=5fe01282e94241328a84e7c5cc169164&redirect_uri=http:%2F%2Fexample.com%2Fcallback&scope=user-read-private%20user-read-email&response_type=token&state=123
-
-//BQC4v6UgjpnmW4EvO_SFb3kNrrV1gB1Jlv68VMUIrVzFBmpO84vNrSo9ir-YgIEOSG5Wqynzc_JhZHZsotpm0rycjcZFj189zCBP46iJw6HxEP0kpz7yH5IRANmXKn2El4CDIXR9mpG79Ft4hD6ZhZwIkJsxbuM
 
 
 //https://open.spotify.com/user/1251530381
@@ -32,4 +34,10 @@ $.ajax({
 //to get top artists, go on web api console, personalization, put information
 
 //use link example on authorization flow guide to get link format
+
+//store upcoming concerts in firebase
+
+//using 
+
+//jquery to get button by id, inside onclick function you get value by id (.val), 
 
