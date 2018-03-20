@@ -1,26 +1,25 @@
-var spotifyResponse = [artist1, artist2, artist3];
+var spotifyResponse = ['artist1', 'artist2', 'artist3'];
 
 
 $(document).ready(function() { 
-
-var spotifyApiUrl='https://accounts.spotify.com/authorize?client_id=117298f8d65647da97d993cc58cfd26d&redirect_uri=https://www.google.com&scope=user-read-private%20user-read-email&response_type=token&state=123'
 	
 $("#singlebutton").click(function(){
-		
+	refreshScreen();
+		console.log("yes");
 
 		});
 
 });
 
-
 // functions that pull artists/concerts and allows to refresh the screen
 
-function updateConcerts();
-
+ // function updateConcerts();
 
 function refreshScreen(){
-	$('')
+	$('#info').empty();
+	$('#info').append("<b>" + spotifyResponse + "</b>");
 };
+
 
 
 
