@@ -1,6 +1,7 @@
-var accessToken = "BQCngKOvUpYV1XJWWMx2LQpeP2vBrmp2Qgx60mE2GHSUQpwA4Zx8sbsn_6TkWVpwVEYoyYKNaOW-bbEiwQ_2olObHRvdKDb5VexFWfFTzUqTLmN44mqf_QdV6qZjfIhDVxu3BHqaRO16oZEH0gKf_MTv_gM";
+var accessToken = "BQBg0QSDQ-_uZewsE32KsFgFmcgzIoFI1Bo_CTvd3v3nzG2RzerGAgDqjn84G50VTxZdm3dbj1m2UPh6OiNVhcKDfsxaVBQx_POS7e2gzhTcTYUV4bdCRMRqD2RGoqgbqKtvouXKHWyGutm7Ajffj9l88jI";
 var type = 'artists'
 function getArtists (callback){
+	
 $.ajax({
    url: `https://api.spotify.com/v1/me/top/${type}?limit=3`,
    headers: {
