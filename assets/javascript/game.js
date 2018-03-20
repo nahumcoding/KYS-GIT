@@ -3,8 +3,8 @@ var spotifyResponse = ['artist1', 'artist2', 'artist3'];
 
 $(document).ready(function() { 
 	
-$("#singlebutton").click(function(){
-	refreshScreen();
+	$("#singlebutton").click(function(){
+		refreshScreen();
 		console.log("yes");
 
 		});
@@ -16,8 +16,8 @@ $("#singlebutton").click(function(){
  // function updateConcerts();
 
 function refreshScreen(){
-	$('#info').empty();
-	$('#info').append("<b>" + spotifyResponse + "</b>");
+	$('#info').empty('#info').append("<b>" + spotifyResponse + "</b>");
+
 };
 
 
