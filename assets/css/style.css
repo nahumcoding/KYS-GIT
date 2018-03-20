@@ -2,7 +2,7 @@ body {
     background-image: url("../images/background.jpg");
 }
 
-.jumbotron {
+#KYS {
     background-image: url("../images/cover.jpg");
     color: white;
     height: 400px;
@@ -29,17 +29,17 @@ body {
     float: right;
 }
 
-.info {
+#info {
+    background-color: transparent;
     color: white;
     text-align: center;
-    width: 400px;
     margin: auto;
     font-family: 'Hammersmith One', sans-serif;
     font-size: 17px;
+    width: 500px;
 }
 
-.foot 
-{
+.foot {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -50,4 +50,13 @@ body {
   height: 40px;
   font-size: 15px;
   font-weight: bold;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+#infoPic {
+    padding: 10px;
+    margin: 10px;
 }

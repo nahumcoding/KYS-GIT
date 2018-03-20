@@ -12,6 +12,8 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+<script src="assets/javascript/game.js"></script>	
+
 <!-- Css link -->
 <link rel="stylesheet" href="assets/css/style.css">
 
@@ -24,20 +26,8 @@
 
 <body>
 	<div class="container">
-		<ul class="nav nav-pills">
-			<li role="presentation" class="active"><a href="#">Home</a></li>
-			<li role="presentation"><a href="#">About Us</a></li>
-		</ul>
-		<form class="navbar-form navbar-right" role="search">
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search">
-			</div>
-			<button type="submit" class="btn btn-default" id="login">Submit</button>
-		</form>
-	</div>
-	
-	<div class="container">
-		<div class="jumbotron">
+		<div class="jumbotron" id="KYS">
+
 			<h1 class="start">KYS Concerts</h1>
 			<p class="instructions">Use your Spotify account to find out when your favorite artist are having their next concerts. Do not miss out on shows near you!</p>
 			<div class="col-md-12 text-center">
@@ -47,14 +37,19 @@
 	</div>
 
 	<div class="container">
-		<p class="info">An easy way for major concert goers to find their favorite artists concerts. Just login to your Spotify Account and we will do the rest finding your top artists nearest venues and major concert dates. Never miss out again when your favorite musicians are in a town near you!</p>
+
+
+		<div class="jumbotron" id="info">
+			<div id=infoPic><img src="assets/images/Headphones.png" alt="headphones" style="width:70px;height:70px;"></div>
+			<p>An easy way for major concert goers to find their favorite artists concerts. Just login to your Spotify Account and we will do the rest finding your top artists nearest venues and major concert dates. Never miss out again when your favorite musicians are in a town near you!</p>
+			<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+		</div>
+
 	</div>
 
 	<div class="foot">
 		<footer>
-			<div class="container" id="footer">
-					KYS
-			</div>
+			<div class="container" id="footer"></div>
 		</footer>
 	</div>
 </body>
