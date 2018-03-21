@@ -50,6 +50,3 @@ $.ajax({
 
 //jquery to get button by id, inside onclick function you get value by id (.val), 
 
-=======
-}
->>>>>>> 8e3ee1e421485d7d09be256280e5c4287065e7d9
