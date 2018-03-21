@@ -1,10 +1,13 @@
 var spotifyResponse = ['artist1', 'artist2', 'artist3'];
 
+function refreshScreen(artists){
+	$('#info').empty('#info').append("<b>" + artists + "</b>");
+};
 
 $(document).ready(function() { 
 	
 	$("#singlebutton").click(function(){
-		refreshScreen();
+		getArtists(refreshScreen);
 		console.log("yes");
 
 		});
@@ -15,10 +18,7 @@ $(document).ready(function() {
 
  // function updateConcerts();
 
-function refreshScreen(){
-	$('#info').empty('#info').append("<b>" + spotifyResponse + "</b>");
 
-};
 
 
 

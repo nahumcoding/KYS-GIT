@@ -1,12 +1,13 @@
-var accessToken = "BQCngKOvUpYV1XJWWMx2LQpeP2vBrmp2Qgx60mE2GHSUQpwA4Zx8sbsn_6TkWVpwVEYoyYKNaOW-bbEiwQ_2olObHRvdKDb5VexFWfFTzUqTLmN44mqf_QdV6qZjfIhDVxu3BHqaRO16oZEH0gKf_MTv_gM";
 
 
 
+var accessToken = "BQBg0QSDQ-_uZewsE32KsFgFmcgzIoFI1Bo_CTvd3v3nzG2RzerGAgDqjn84G50VTxZdm3dbj1m2UPh6OiNVhcKDfsxaVBQx_POS7e2gzhTcTYUV4bdCRMRqD2RGoqgbqKtvouXKHWyGutm7Ajffj9l88jI";
 
 var type = 'artists'
 
-
 function getArtists (callback){
+	
+
 $.ajax({
    url: `https://api.spotify.com/v1/me/top/${type}?limit=3`,
    headers: {
@@ -14,7 +15,11 @@ $.ajax({
    },
    success: function(response) {
 
-   	var artists = [];
+
+
+
+
+    var artists = [];
 
      for(i=0; i<response.items.length; i++){
        artists.push(response.items[i].name);
@@ -22,6 +27,7 @@ $.ajax({
        callback(artists);
    }
 });
+
 
 }
 
@@ -41,3 +47,6 @@ $.ajax({
 
 //jquery to get button by id, inside onclick function you get value by id (.val), 
 
+=======
+}
+>>>>>>> 8e3ee1e421485d7d09be256280e5c4287065e7d9
