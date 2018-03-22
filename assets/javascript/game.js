@@ -1,14 +1,18 @@
-
-
-function displayArtists(artists){
-	$('#info').empty('#info').append("<b>" + artists + "</b>");
-	seatGeek(artists);
-};
-
-function displayConcerts(concerts) {
+function displayConcerts(concerts, artist) {
 	$('#info2').empty('#info2').append("<b>" + concerts + "</b>");
 	// body...
 }
+
+function displayArtists(artists){
+	$('#info').empty('#info').append("<b>" + artists + "</b>");
+	
+ 		for (s=0; s<artists.length; s++){
+ 			// 3 diff divs for artists
+			seatGeek(artists[s], displayConcerts);
+		}
+};
+
+
 
 $(document).ready(function() { 
 	
