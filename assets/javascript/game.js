@@ -1,13 +1,19 @@
-var spotifyResponse = ['artist1', 'artist2', 'artist3'];
 
-function refreshScreen(artists){
+
+function displayArtists(artists){
 	$('#info').empty('#info').append("<b>" + artists + "</b>");
+	seatGeek(artists);
 };
+
+function displayConcerts(concerts) {
+	$('#info2').empty('#info2').append("<b>" + concerts + "</b>");
+	// body...
+}
 
 $(document).ready(function() { 
 	
 	$("#singlebutton").click(function(){
-		getArtists(refreshScreen);
+		getArtists(displayArtists);
 		console.log("yes");
 
 		});
