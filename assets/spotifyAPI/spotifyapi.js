@@ -1,10 +1,6 @@
 
-var accessToken = "BQBckKoaOaiiDy4QlF4HFpE5PjS9Bl6ACUHUcsMqiVq5s5EaZzmbQfAd3kRMYuoAVmM_GdPp3YPeSMRs7nBFWPNxod0EvDgPCLWsmOVbcgmMAWbsVcKY0rN0BlWzxz-TJ_dZaWjr0Fi9vIu9Lc-55MlK";
+var accessToken = "BQBLyBFPgr-xB9ZlyzXrrroCVBC21gVUroO5vJYoYLnRWojQBQsQxOr1A8PiF_fkZZKvEMqBz8hznC5XbKOPxP-pWGB5oVV8yQrEbDFJh3a5jFSLk7sfEGrrKL1wopAzudaIvN2xPBVrgb5y9r5X77yv";
 
-
-
-
-var accessToken = "BQBg0QSDQ-_uZewsE32KsFgFmcgzIoFI1Bo_CTvd3v3nzG2RzerGAgDqjn84G50VTxZdm3dbj1m2UPh6OiNVhcKDfsxaVBQx_POS7e2gzhTcTYUV4bdCRMRqD2RGoqgbqKtvouXKHWyGutm7Ajffj9l88jI";
 
 var type = 'artists'
 
@@ -12,22 +8,19 @@ function getArtists (callback){
 	
 
 $.ajax({
-   url: `https://api.spotify.com/v1/me/top/${type}?limit=1`,
+   url: `https://api.spotify.com/v1/me/top/${type}?limit=3`,
    headers: {
        'Authorization': 'Bearer ' + accessToken
    },
    success: function(response) {
 
 
-
-
-
     var artists = [];
 
-     for(i=0; i<response.items.length; i++){
+     for(i = 0; i < response.items.length; i++){
        artists.push(response.items[i].name);
        }
-       callback(artists);
+       callback(artists); 
    }
 });
 
