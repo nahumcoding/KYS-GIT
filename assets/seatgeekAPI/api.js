@@ -23,14 +23,10 @@ function seatGeek(artist, callback) {
 
 
 } 
-<<<<<<< HEAD
-
-
 
 
 
 
 
 myFunction ('lil wayne', 'drake',)
-=======
->>>>>>> c4dbe9b1f3991b47099faa8aa0a0e3802eb09570
+
