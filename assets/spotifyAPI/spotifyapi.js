@@ -8,7 +8,7 @@ function getArtists (callback){
 	
 
 $.ajax({
-   url: `https://api.spotify.com/v1/me/top/${type}?limit=3`,
+   url: `https://api.spotify.com/v1/me/top/${type}?limit=1`,
    headers: {
        'Authorization': 'Bearer ' + accessToken
    },

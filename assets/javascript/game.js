@@ -1,6 +1,9 @@
 function displayConcerts(concerts, artist) {
-	$('#info2').empty('#info2').append("<b>" + concerts + "</b>");
+	for (j=0; j<concerts.length; j++)
+		{var concert = concerts[j]
+	$('#info2').empty('#info2').append("<b>" + concert.location + "<br>"+ concert.url + "<br>"+ concert.venue + "</b>");
 	// body...
+	}
 }
 
 function displayArtists(artists){

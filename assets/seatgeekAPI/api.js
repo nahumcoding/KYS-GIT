@@ -10,11 +10,12 @@ function seatGeek(artist, callback) {
 
     $.get( demo2 +'&q='+ artist, function(data) {
     	    var concert = [];
-
+    	    console.log(data)
      for(i=0; i<data.events.length; i++){
-       concert.push(data.events[i].venue.display_location);
+       concert.push({'location':data.events[i].venue.display_location, "url":data.events[i].url, "venue":data.events[i].venue.name});
        // make line above into json obj and pass to game.js
-       }
+       // 3 things to display venue, city& state, date
+       } 
        callback(concert, artist);
    
      console.log(concert);
