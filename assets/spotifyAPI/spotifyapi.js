@@ -1,5 +1,5 @@
 
-var accessToken = "BQClh1Qo5UchqvLhS3lYqph-wR0NueAqSw0AqS-BBJ2EQUSHJKRo9AAwF5D26Ck_ageZp_QH42E0NY-u98o2WeuWUUWgg9lCsrCEyVZVJkcFcZjRySSfgZo51wp_nQwTKJb5K1cE_QLFKOG6DDs5Hcyz";
+var accessToken = "BQDH3h8iISc0q4MVnt005RTfRZuGwcIAn2AFuII_vaK-pjGYCO9OFOQW2Ix8mJl7VRkCK-51JhfaEpNgqPj5U0CDOht5EGoJRGEfUNXlnpFdmDTlilslg1BBZLc6S8e4OPOkA15ShMge91KSBg9-EDk";
 
 
 var type = 'artists'

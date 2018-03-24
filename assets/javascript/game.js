@@ -5,9 +5,9 @@ function displayConcerts(artist, concert) {
 		 $('#index00').append( "<th>" + "Artist:   " + "</th>" + '<td>' + updateConcerts.artist + '</td>');
 		 $('#index01').append( "<th>" + "Where:    " + "</th>" + '<td>' + updateConcerts.location + '</td>');
 		 $('#index02').append( "<th>" + "Venue:    " + "</th>" + '<td>' + updateConcerts.venue + '</td>');
-		 $('#index03').append( "<th>" + "URL:      " + "</th>" + '<td>' +"<br>"+"<br>"+ updateConcerts.url + '</td>');
+		 $('#index03').append( "<th>" + "URL:      " + "</th>" + '<td>' +  "<a href=" + updateConcerts.url + ">" +"Buy Tickets"+ "</a>" + '</td>');
 		 // $('#index02').empty('#index02').append( updateConcerts.location ) ;
-}
+ }
 
 function displayArtists(artistResult){
 	// $('#info').empty('#info').append("<b>" + artistResult + "</b>");
@@ -26,7 +26,7 @@ $(document).ready(function() { $("#myTable").hide()
 		$("#myTable").show();
 		getArtists(displayArtists);
 
-	});
+	})
 // console.log(getArtists());
 });
 
