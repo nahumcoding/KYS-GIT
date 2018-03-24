@@ -22,9 +22,8 @@ function displayArtists(artistResult){
 // start function. is triggered by click
 $(document).ready(function() { $("#myTable").hide()
 	$("#singlebutton").click(function(){
-		$('#singlebutton').hide();
+		$('.hideIt').hide();
 		$("#myTable").show();
-		$("#info").hide()
 		getArtists(displayArtists);
 
 	});
