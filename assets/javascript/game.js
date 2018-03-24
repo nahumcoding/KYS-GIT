@@ -1,37 +1,39 @@
-function displayConcerts(concerts, artist) {
-	for (j=0; j<concerts.length; j++)
-		{var concert = concerts[j]
-	$('#info2').empty('#info2').append("<b>" + concert.location + "<br>"+ concert.url + "<br>"+ concert.venue + "</b>");
-	// body...
+function displayConcerts(concert) {
+	for (j=0; j<concert.length; j++){
+		var updateConcerts = concert[j];
+
+		// var updatedArtists = [];
+		// updatedArtists.push
+
+
+  		// $('#info2').append(updateConcerts.artist[0]);
+  //      	 });
+			// $('#myTable tr:last').after('<tr>' + updateConcerts.location + '</tr>' + updateConcerts.url + '<tr>' + updateConcerts.venue + '</tr>');
+			// $('#info').append("<td>" + concerts[0].artist + "<br>" + "</td>");
 	}
+		// $('#info').empty('#info').append("<b>" + updateConcerts + "</b>");
 }
 
-function displayArtists(artists){
-	$('#info').empty('#info').append("<b>" + artists + "</b>");
-	
- 		for (s=0; s<artists.length; s++){
- 			// 3 diff divs for artists
-			seatGeek(artists[s], displayConcerts);
+
+
+function displayArtists(artistResult){
+	// $('#info').empty('#info').append("<b>" + artistResult + "</b>");
+ 		for (p=0; p<artistResult.length; p++){
+ 			// calls seatGeekSearch function  in api.js and calls displayConcerts
+			seatGeekSearch(artistResult[p], displayConcerts);
 		}
 };
 
 
 
-$(document).ready(function() { 
-	
+// start function. is triggered by click
+$(document).ready(function() { $("#myTable").hide()
 	$("#singlebutton").click(function(){
+		$("#myTable").show()
 		getArtists(displayArtists);
-		console.log("yes");
-
-		});
-
+		console.log();
+	});
 });
-
-// functions that pull artists/concerts and allows to refresh the screen
-
- // function updateConcerts();
-
-
 
 
 
@@ -41,6 +43,6 @@ $(document).ready(function() {
 // present on saturday
 
 
-// 2 functions are needed.  Get function will nbe in "API.js' Trigger call to API and call to do refresh
+// 2 functions are needed.  Get function will nbe in "API.js' Trigger  to API and call to do refresh
 
 // refreshing the DOM. Refreshing the page 
