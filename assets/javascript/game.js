@@ -2,11 +2,11 @@ function displayConcerts(artist, concert) {
 	for (j=0; j<concert.length; j++){
 		var updateConcerts = concert[j];
 	}
-		 $('#index00').append( "<th>" + "Artist:   " + "</th>" + '<td>' + updateConcerts.artist + '</td>');
-		 $('#index01').append( "<th>" + "Where:    " + "</th>" + '<td>' + updateConcerts.location + '</td>');
-		 $('#index02').append( "<th>" + "Venue:    " + "</th>" + '<td>' + updateConcerts.venue + '</td>');
-		 $('#index03').append( "<th>" + "URL:      " + "</th>" + '<td>' +  "<a href=" + updateConcerts.url + ">" +"Buy Tickets"+ "</a>" + '</td>');
-		 // $('#index02').empty('#index02').append( updateConcerts.location ) ;
+		 $('#tabRow00').append( "<th>" + "Artist:   " + "</th>" + '<td>' + updateConcerts.artist + '</td>');
+		 $('#tabRow01').append( "<th>" + "Where:    " + "</th>" + '<td>' + updateConcerts.location + '</td>');
+		 $('#tabRow02').append( "<th>" + "Venue:    " + "</th>" + '<td>' + updateConcerts.venue + '</td>');
+		 $('#tabRow03').append( "<th>" + "To Ticket Master: --->" + "</th>" + '<td>' +  "<a href=" + updateConcerts.url + ">" +"Buy Tickets"+ "</a>" + '</td>');
+
  }
 
 function displayArtists(artistResult){
