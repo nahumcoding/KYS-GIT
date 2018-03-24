@@ -11,6 +11,7 @@ function displayConcerts(concert) {
 			// $('#myTable tr:last').after('<tr>' + updateConcerts.location + '</tr>' + updateConcerts.url + '<tr>' + updateConcerts.venue + '</tr>');
 			// $('#info').append("<td>" + concerts[0].artist + "<br>" + "</td>");
 	}
+	console.log(updateConcerts)
 		// $('#info').empty('#info').append("<b>" + updateConcerts + "</b>");
 }
 
