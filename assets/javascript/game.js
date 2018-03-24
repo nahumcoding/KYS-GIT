@@ -2,11 +2,10 @@ function displayConcerts(artist, concert) {
 	for (j=0; j<concert.length; j++){
 		var updateConcerts = concert[j];
 	}
-	console.log(updateConcerts);
-		 $('#index00').append( "<th>"+ "Artist: " + "</th>" + '<td>' + updateConcerts.artist + '</td>');
-		 $('#index01').append( "<th>"+ "Where: " + "</th>" + '<td>' + updateConcerts.location + '</td>');
-		 $('#index02').append( "<th>"+ "Venue: " + "</th>" + '<td>' + updateConcerts.venue + '</td>');
-		 $('#index03').append( "<th>"+ "url: " + "</th>" + '<td>' +"<br>"+"<br>"+ updateConcerts.url + '</td>');
+		 $('#index00').append( "<th>" + "Artist:   " + "</th>" + '<td>' + updateConcerts.artist + '</td>');
+		 $('#index01').append( "<th>" + "Where:    " + "</th>" + '<td>' + updateConcerts.location + '</td>');
+		 $('#index02').append( "<th>" + "Venue:    " + "</th>" + '<td>' + updateConcerts.venue + '</td>');
+		 $('#index03').append( "<th>" + "URL:      " + "</th>" + '<td>' +"<br>"+"<br>"+ updateConcerts.url + '</td>');
 		 // $('#index02').empty('#index02').append( updateConcerts.location ) ;
 }
 
@@ -23,7 +22,8 @@ function displayArtists(artistResult){
 // start function. is triggered by click
 $(document).ready(function() { $("#myTable").hide()
 	$("#singlebutton").click(function(){
-		$("#myTable").show()
+		$("#myTable").show();
+		$("#info").hide()
 		getArtists(displayArtists);
 
 	});
