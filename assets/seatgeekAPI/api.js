@@ -10,8 +10,8 @@ function seatGeekSearch(artist, callback) {
     for(i=0; i<response.events.length; i++){
       var concerts = [];
 
-      concerts.push({ 'artist': artist, 'location':response.events[i].venue.display_location, "venue":response.events[i].venue.name, "url":response.events[i].url});
-      console.log();
+      concerts.push({ 'artist': artist, 'location':response.events[i].venue.display_location, "when":response.events[i].datetime_utc,"venue":response.events[i].venue.name, "url":response.events[i].url});
+      console.log(concerts);
     } 
 
 

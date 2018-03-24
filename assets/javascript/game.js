@@ -5,7 +5,8 @@ function displayConcerts(artist, concert) {
 		 $('#tabRow00').append( "<th>" + "Artist:   " + "</th>" + '<td>' + updateConcerts.artist + '</td>');
 		 $('#tabRow01').append( "<th>" + "Where:    " + "</th>" + '<td>' + updateConcerts.location + '</td>');
 		 $('#tabRow02').append( "<th>" + "Venue:    " + "</th>" + '<td>' + updateConcerts.venue + '</td>');
-		 $('#tabRow03').append( "<th>" + "To Ticket Master: --->" + "</th>" + '<td>' +  "<a href=" + updateConcerts.url + ">" +"Buy Tickets"+ "</a>" + '</td>');
+		 $('#tabRow03').append( "<th>" + "When:    " + "</th>" + '<td>' + "<br>"+ updateConcerts.when+ '</td>'); 
+		 $('#tabRow04').append( "<th>" + "To Ticket Master: --->" + "</th>" + '<td>' +  "<a href=" + updateConcerts.url + ">" +"Buy Tickets"+ "</a>" + '</td>');
 
  }
 
