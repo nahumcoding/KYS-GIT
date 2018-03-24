@@ -4,9 +4,9 @@ function displayConcerts(artist, concert) {
 	}
 	console.log(updateConcerts);
 		 $('#index00').append( "<th>"+ "Artist: " + "</th>" + '<td>' + updateConcerts.artist + '</td>');
-		 $('#index01').append( "<th>"+ "Location: " + "</th>" + '<td>' + updateConcerts.location + '</td>');
+		 $('#index01').append( "<th>"+ "Where: " + "</th>" + '<td>' + updateConcerts.location + '</td>');
 		 $('#index02').append( "<th>"+ "Venue: " + "</th>" + '<td>' + updateConcerts.venue + '</td>');
-		 $('#index03').append( "<th>"+ "url: " + "</th>" + '<td>' + updateConcerts.url + '</td>');
+		 $('#index03').append( "<th>"+ "url: " + "</th>" + '<td>' +"<br>"+"<br>"+ updateConcerts.url + '</td>');
 		 // $('#index02').empty('#index02').append( updateConcerts.location ) ;
 }
 
