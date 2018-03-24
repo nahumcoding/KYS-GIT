@@ -13,11 +13,14 @@ function seatGeekSearch(artist, callback) {
       var concerts = [];
 
       concerts.push({ 'artist': artist, 'location':response.events[i].venue.display_location, "venue":response.events[i].venue.name, "url":response.events[i].url});
-
+      console.log();
     } 
 
-    
-  callback(concerts, artist);
+
+  callback(artist, concerts);
+
+  // console.log(concerts);
   // console.log(concerts, artist);
   });
 } 
+// console.log(0;

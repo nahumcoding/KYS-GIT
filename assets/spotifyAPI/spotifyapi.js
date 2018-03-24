@@ -1,5 +1,5 @@
 
-var accessToken = "BQDQkRY4847BlDMkgDReMAnfcvD9s9QXgxJUUWMK3mSszWw4guKmDLcf3g0DiPtkbZTmszNM-XeMK6iEVztIal4SI8MWOTwqXysBXVYuAKS5mUzMoLQQlPbbB_xcNfv1O_PuizlP5sMq6xO38YiupdLU";
+var accessToken = "BQAP4kCFHs0KsmUl_GNSKJ4OuuunRq9ySTy4DPfonIhGuDWzJvqvDEWkObfH2Q0sY_gjz578DChV1Zz9oO9ZRckvT3D7fSbwZ04hQATT3N21xfd2EFg0_VsXXkexkCRqo9y3ldXc6yusXwzVtRuDh4k8";
 
 
 var type = 'artists'
@@ -15,22 +15,19 @@ function getArtists (callback){
    
   success: function(response) {
     
-    var artists = [];
+     artists = [];
 
       for(i = 0; i < response.items.length; i++){
         artists.push(response.items[i].name);
         
       }
-
       callback(artists); 
    }
 
 });
-
-
+console.log();
 }
-
-
+console.log();
 
 
 //https://open.spotify.com/user/1251530381

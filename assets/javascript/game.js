@@ -1,21 +1,14 @@
-function displayConcerts(concert) {
+function displayConcerts(artist, concert) {
 	for (j=0; j<concert.length; j++){
 		var updateConcerts = concert[j];
-
-		// var updatedArtists = [];
-		// updatedArtists.push
-
-
-  		// $('#info2').append(updateConcerts.artist[0]);
-  //      	 });
-			// $('#myTable tr:last').after('<tr>' + updateConcerts.location + '</tr>' + updateConcerts.url + '<tr>' + updateConcerts.venue + '</tr>');
-			// $('#info').append("<td>" + concerts[0].artist + "<br>" + "</td>");
 	}
-	console.log(updateConcerts)
-		// $('#info').empty('#info').append("<b>" + updateConcerts + "</b>");
+	console.log(updateConcerts);
+		 $('#index00').append( "<th>"+ "Artist: " + "</th>" + '<td>' + updateConcerts.artist + '</td>');
+		 $('#index01').append( "<th>"+ "Location: " + "</th>" + '<td>' + updateConcerts.location + '</td>');
+		 $('#index02').append( "<th>"+ "Venue: " + "</th>" + '<td>' + updateConcerts.venue + '</td>');
+		 $('#index03').append( "<th>"+ "url: " + "</th>" + '<td>' + updateConcerts.url + '</td>');
+		 // $('#index02').empty('#index02').append( updateConcerts.location ) ;
 }
-
-
 
 function displayArtists(artistResult){
 	// $('#info').empty('#info').append("<b>" + artistResult + "</b>");
@@ -32,10 +25,10 @@ $(document).ready(function() { $("#myTable").hide()
 	$("#singlebutton").click(function(){
 		$("#myTable").show()
 		getArtists(displayArtists);
-		console.log();
-	});
-});
 
+	});
+// console.log(getArtists());
+});
 
 
 
